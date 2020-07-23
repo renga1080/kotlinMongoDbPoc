@@ -1,0 +1,20 @@
+server:
+  port: 8283
+  servlet:
+    context-path: /kotlinmongodb
+
+spring:
+  data:
+    mongodb:
+      database: rengaDB
+      port: 27017
+
+management:
+  endpoint:
+    enabled-by-default: true
+    info:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
